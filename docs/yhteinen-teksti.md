@@ -5,3 +5,4 @@
 ei
 
 Moi t: Adam
+Projektin aihe on edelleen hieman auki
