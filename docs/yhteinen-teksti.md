@@ -3,3 +3,6 @@
 älämölöälämölöälämölöälämölöälämölöddsdsdslämölö
 älämölöälämölöälämölöälämölöälämölö EI ämölö muutokset ovat kivoja
 ei
+
+Moi t: Adam
+Projektin aihe on edelleen hieman auki
