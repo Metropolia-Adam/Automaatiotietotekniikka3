@@ -1,5 +1,8 @@
 # Automaatiotietotekniikka3
 
+## Projektin määrittely
+
+Lue [projektin määrittely ja hyväksymiskriteerit](docs/01-projektikuvaus.md).
 
 Muutokset:
 https://github.com/Metropolia-Adam/Automaatiotietotekniikka3/commits/main/
@@ -13,5 +16,8 @@ https://github.com/Metropolia-Adam/Automaatiotietotekniikka3/commit/8d0218af87b5
 Tietenkin valittiin ymmärrettävämpi teksti 
 
 
+
 Työn tila:
 Valmis
+
+
