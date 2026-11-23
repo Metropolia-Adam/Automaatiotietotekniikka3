@@ -1,1 +1,196 @@
+/* Perusasetukset ja väripaletti */
+:root {
+  --bg-color: #f4f6f8;
+  --card-bg: #ffffff;
+  --text-main: #1e293b;
+  --text-muted: #64748b;
+  --primary-color: #2563eb;    /* Sininen nappi */
+  --accent-color: #16a34a;     /* Vihreä reseptinappi */
+  
+  /* V2: Hälytysvärit */
+  --red-bg: #fee2e2;
+  --red-border: #ef4444;
+  --yellow-bg: #fef9c3;
+  --yellow-border: #eab308;
+}
 
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-main);
+  padding: 16px;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+header h1 {
+  font-size: 1.75rem;
+  color: var(--text-main);
+  margin-bottom: 4px;
+}
+
+header p {
+  color: var(--text-muted);
+  font-size: 0.9rem;
+}
+
+.card {
+  background: var(--card-bg);
+  border-radius: 12px;
+  padding: 16px;
+  margin-bottom: 16px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+
+h2 {
+  font-size: 1.1rem;
+  margin-bottom: 12px;
+}
+
+/* Lomake */
+.input-group {
+  margin-bottom: 12px;
+  flex: 1;
+}
+
+.row {
+  display: flex;
+  gap: 10px;
+}
+
+label {
+  display: block;
+  font-size: 0.85rem;
+  margin-bottom: 4px;
+  color: var(--text-muted);
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+  font-size: 1rem;
+}
+
+/* Napit */
+.btn {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: bold;
+  color: white;
+  cursor: pointer;
+}
+
+.btn-primary { background-color: var(--primary-color); }
+.btn-accent { background-color: var(--accent-color); font-size: 1.1rem; }
+.btn:active { opacity: 0.85; }
+
+/* V4: Virheilmoitus */
+.error {
+  color: #dc2626;
+  background-color: #fee2e2;
+  padding: 8px 12px;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  margin-bottom: 12px;
+}
+
+.hidden {
+  display: none;
+}
+
+/* V2: Tuotelista ja värikoodit */
+.product-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.product-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px;
+  border-radius: 8px;
+  background-color: #f8fafc;
+  border-left: 5px solid #cbd5e1;
+}
+
+.urgent-red {
+  background-color: var(--red-bg);
+  border-left-color: var(--red-border);
+}
+
+.warning-yellow {
+  background-color: var(--yellow-bg);
+  border-left-color: var(--yellow-border);
+}
+
+.days-left {
+  display: block;
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  margin-top: 2px;
+}
+
+.btn-delete {
+  background: none;
+  border: none;
+  font-size: 1.2rem;
+  color: var(--text-muted);
+  cursor: pointer;
+  padding: 4px 8px;
+}
+
+/* V3: Reseptikortit */
+.recipe-list {
+  margin-top: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.recipe-card {
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  padding: 12px;
+  background-color: #f8fafc;
+}
+
+.recipe-card h3 {
+  margin-bottom: 6px;
+}
+
+.uses-urgent {
+  color: #15803d;
+  font-size: 0.9rem;
+  margin-bottom: 4px;
+}
+
+.missing-items {
+  color: #b91c1c;
+  font-weight: 500;
+  font-size: 0.9rem;
+  margin-bottom: 8px;
+}
+
+.instructions {
+  font-size: 0.9rem;
+  color: var(--text-main);
+}
