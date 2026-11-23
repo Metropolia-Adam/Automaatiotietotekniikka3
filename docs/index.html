@@ -41,39 +41,23 @@
       </form>
     </section>
 
-    <!-- V2: Jääkaapin sisältö (esimerkkirivit näyttävät miltä värikoodit näyttävät) -->
+    <!-- V2: Jääkaapin sisältö (tyhjä, koska app.js täyttää tämän) -->
     <section class="card">
       <h2>Jääkaapin sisältö</h2>
       <ul id="fridge-list" class="product-list">
-        <!-- Esimerkki punaisesta (<= 2 pv) -->
-        <li class="product-item urgent-red">
-          <div class="product-info">
-            <strong>Kanafileet</strong> (400g)
-            <span class="days-left">Vanhenee huomenna!</span>
-          </div>
-          <button class="btn-delete" title="Poista">✕</button>
-        </li>
-
-        <!-- Esimerkki keltaisesta (<= 5 pv) -->
-        <li class="product-item warning-yellow">
-          <div class="product-info">
-            <strong>Kermapurkki</strong> (2dl)
-            <span class="days-left">4 päivää jäljellä</span>
-          </div>
-          <button class="btn-delete" title="Poista">✕</button>
-        </li>
-
-        <!-- Esimerkki normaalista -->
-        <li class="product-item">
-          <div class="product-info">
-            <strong>Kananmunat</strong> (6 kpl)
-            <span class="days-left">12 päivää jäljellä</span>
-          </div>
-          <button class="btn-delete" title="Poista">✕</button>
-        </li>
       </ul>
     </section>
 
     <!-- V3: Reseptiehdotukset -->
     <section class="card">
-      <button id="suggest-recipes
+      <button id="suggest-recipes-btn" class="btn btn-accent">🍳 Ehdota reseptejä</button>
+      
+      <div id="recipe-results" class="recipe-list">
+      </div>
+    </section>
+  </main>
+
+  <script src="logic.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
