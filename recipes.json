@@ -1,0 +1,198 @@
+[
+  {
+    "id": 1,
+    "name": "Kermainen kanapasta",
+    "ingredients": [
+      "kana",
+      "kerma",
+      "pasta",
+      "suola",
+      "mustapippuri"
+    ],
+    "instructions": [
+      "Keitä pasta pakkauksen ohjeen mukaan.",
+      "Paista pilkottu kana kypsäksi.",
+      "Lisää kerma, suola ja mustapippuri pannulle.",
+      "Sekoita kastike pastan kanssa."
+    ]
+  },
+  {
+    "id": 2,
+    "name": "Munakas",
+    "ingredients": [
+      "muna",
+      "maito",
+      "suola",
+      "mustapippuri"
+    ],
+    "instructions": [
+      "Riko munat kulhoon ja vatkaa maidon kanssa.",
+      "Mausta suolalla ja mustapippurilla.",
+      "Paista pannulla kypsäksi."
+    ]
+  },
+  {
+    "id": 3,
+    "name": "Tonnikalapasta",
+    "ingredients": [
+      "tonnikala",
+      "pasta",
+      "tomaatti",
+      "sipuli",
+      "suola"
+    ],
+    "instructions": [
+      "Keitä pasta.",
+      "Pilko ja paista sipuli.",
+      "Lisää tonnikala ja pilkottu tomaatti.",
+      "Sekoita kastike pastan joukkoon ja mausta."
+    ]
+  },
+  {
+    "id": 4,
+    "name": "Peruna-kanapelti",
+    "ingredients": [
+      "kana",
+      "peruna",
+      "öljy",
+      "suola",
+      "mustapippuri"
+    ],
+    "instructions": [
+      "Pilko perunat ja kana.",
+      "Mausta öljyllä, suolalla ja mustapippurilla.",
+      "Paista uunissa 200 asteessa, kunnes kana on kypsää ja perunat pehmeitä."
+    ]
+  },
+  {
+    "id": 5,
+    "name": "Tomaattinen linssikeitto",
+    "ingredients": [
+      "linssi",
+      "tomaatti",
+      "sipuli",
+      "vesi",
+      "suola"
+    ],
+    "instructions": [
+      "Pilko sipuli ja kuullota kattilassa.",
+      "Lisää linssit, tomaatti ja vesi.",
+      "Keitä, kunnes linssit ovat pehmeitä.",
+      "Mausta suolalla."
+    ]
+  },
+  {
+    "id": 6,
+    "name": "Juustoinen quesadilla",
+    "ingredients": [
+      "tortilla",
+      "juusto",
+      "tomaatti"
+    ],
+    "instructions": [
+      "Pilko tomaatti.",
+      "Lisää juusto ja tomaatti tortillan sisään.",
+      "Taita tortilla ja paista pannulla molemmin puolin, kunnes juusto sulaa."
+    ]
+  },
+  {
+    "id": 7,
+    "name": "Pannulla paistettu riisi ja muna",
+    "ingredients": [
+      "riisi",
+      "muna",
+      "porkkana",
+      "öljy",
+      "suola"
+    ],
+    "instructions": [
+      "Keitä riisi tai käytä valmista riisiä.",
+      "Pilko porkkana ja paista öljyssä.",
+      "Lisää riisi ja paista hetki.",
+      "Lisää muna ja sekoita kypsäksi. Mausta suolalla."
+    ]
+  },
+  {
+    "id": 8,
+    "name": "Kermainen sienipasta",
+    "ingredients": [
+      "sieni",
+      "kerma",
+      "pasta",
+      "sipuli",
+      "suola"
+    ],
+    "instructions": [
+      "Keitä pasta.",
+      "Pilko ja paista sienet sekä sipuli.",
+      "Lisää kerma ja suola.",
+      "Sekoita kastike pastaan."
+    ]
+  },
+  {
+    "id": 9,
+    "name": "Uunimunakas",
+    "ingredients": [
+      "muna",
+      "maito",
+      "juusto",
+      "tomaatti",
+      "suola"
+    ],
+    "instructions": [
+      "Vatkaa munat ja maito.",
+      "Lisää pilkottu tomaatti, juusto ja suola.",
+      "Paista uunivuoassa 180 asteessa, kunnes munakas on hyytynyt."
+    ]
+  },
+  {
+    "id": 10,
+    "name": "Porkkana-perunamuusi",
+    "ingredients": [
+      "peruna",
+      "porkkana",
+      "maito",
+      "voi",
+      "suola"
+    ],
+    "instructions": [
+      "Kuori ja keitä perunat sekä porkkanat pehmeiksi.",
+      "Kaada vesi pois.",
+      "Lisää maito ja voi, muussaa tasaiseksi.",
+      "Mausta suolalla."
+    ]
+  },
+  {
+    "id": 11,
+    "name": "Nopea tomaattinen kanariisi",
+    "ingredients": [
+      "kana",
+      "riisi",
+      "tomaatti",
+      "sipuli",
+      "suola"
+    ],
+    "instructions": [
+      "Keitä riisi.",
+      "Paista pilkottu kana kypsäksi.",
+      "Lisää sipuli ja tomaatti, kypsennä pehmeiksi.",
+      "Mausta ja tarjoa riisin kanssa."
+    ]
+  },
+  {
+    "id": 12,
+    "name": "Pasta juustokastikkeella",
+    "ingredients": [
+      "pasta",
+      "maito",
+      "juusto",
+      "suola"
+    ],
+    "instructions": [
+      "Keitä pasta.",
+      "Kuumenna maito kattilassa varovasti.",
+      "Lisää juustoraaste ja sekoita, kunnes juusto sulaa.",
+      "Mausta ja tarjoa pastan kanssa."
+    ]
+  }
+]
