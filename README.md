@@ -2,7 +2,7 @@
 
 ## Projektin määrittely
 
-[Projektin määrittely ja hyväksymiskriteerit](docs/01-projektikuvaus2.md).
+[Projektin määrittely ja hyväksymiskriteerit](docs/01-projektinkuvaus2.md).
 
 Muutokset:
 https://github.com/Metropolia-Adam/Automaatiotietotekniikka3/commits/main/
