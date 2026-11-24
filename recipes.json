@@ -5,9 +5,7 @@
     "ingredients": [
       "kana",
       "kerma",
-      "pasta",
-      "suola",
-      "mustapippuri"
+      "pasta"
     ],
     "instructions": [
       "Keitä pasta pakkauksen ohjeen mukaan.",
@@ -21,9 +19,7 @@
     "name": "Munakas",
     "ingredients": [
       "muna",
-      "maito",
-      "suola",
-      "mustapippuri"
+      "maito"
     ],
     "instructions": [
       "Riko munat kulhoon ja vatkaa maidon kanssa.",
@@ -38,8 +34,7 @@
       "tonnikala",
       "pasta",
       "tomaatti",
-      "sipuli",
-      "suola"
+      "sipuli"
     ],
     "instructions": [
       "Keitä pasta.",
@@ -54,9 +49,7 @@
     "ingredients": [
       "kana",
       "peruna",
-      "öljy",
-      "suola",
-      "mustapippuri"
+      "öljy"
     ],
     "instructions": [
       "Pilko perunat ja kana.",
@@ -71,8 +64,7 @@
       "linssi",
       "tomaatti",
       "sipuli",
-      "vesi",
-      "suola"
+      "vesi"
     ],
     "instructions": [
       "Pilko sipuli ja kuullota kattilassa.",
@@ -102,8 +94,7 @@
       "riisi",
       "muna",
       "porkkana",
-      "öljy",
-      "suola"
+      "öljy"
     ],
     "instructions": [
       "Keitä riisi tai käytä valmista riisiä.",
@@ -119,8 +110,7 @@
       "sieni",
       "kerma",
       "pasta",
-      "sipuli",
-      "suola"
+      "sipuli"
     ],
     "instructions": [
       "Keitä pasta.",
@@ -136,8 +126,7 @@
       "muna",
       "maito",
       "juusto",
-      "tomaatti",
-      "suola"
+      "tomaatti"
     ],
     "instructions": [
       "Vatkaa munat ja maito.",
@@ -152,8 +141,7 @@
       "peruna",
       "porkkana",
       "maito",
-      "voi",
-      "suola"
+      "voi"
     ],
     "instructions": [
       "Kuori ja keitä perunat sekä porkkanat pehmeiksi.",
@@ -169,8 +157,7 @@
       "kana",
       "riisi",
       "tomaatti",
-      "sipuli",
-      "suola"
+      "sipuli"
     ],
     "instructions": [
       "Keitä riisi.",
@@ -185,14 +172,171 @@
     "ingredients": [
       "pasta",
       "maito",
-      "juusto",
-      "suola"
+      "juusto"
     ],
     "instructions": [
       "Keitä pasta.",
       "Kuumenna maito kattilassa varovasti.",
       "Lisää juustoraaste ja sekoita, kunnes juusto sulaa.",
       "Mausta ja tarjoa pastan kanssa."
+    ]
+  },
+  {
+    "id": 13,
+    "name": "Pata de la nisti - makaroonilaatikko",
+    "ingredients": [
+      "jauheliha",
+      "makaroni",
+      "maito",
+      "kananmuna",
+      "sipuli"
+    ],
+    "instructions": [
+      "Keitä makaronit pakkauksen ohjeen mukaan.",
+      "Pilko sipuli ja paista se jauhelihan kanssa kypsäksi.",
+      "Sekoita makaronit ja jauhelihaseos uunivuoassa.",
+      "Vatkaa maito ja kananmuna yhteen, mausta suolalla ja mustapippurilla ja kaada vuokaan.",
+      "Paista 200 asteessa noin 45 minuuttia, kunnes laatikko on hyytynyt ja pinta on saanut väriä."
+    ]
+  },
+  {
+    "id": 14,
+    "name": "Jauhelihakeitto",
+    "ingredients": [
+      "jauheliha",
+      "peruna",
+      "porkkana",
+      "sipuli",
+      "valkosipuli",
+      "herne",
+      "vesi"
+    ],
+    "instructions": [
+      "Kuori ja pilko perunat, porkkanat, sipuli ja valkosipuli.",
+      "Ruskista jauheliha kattilassa ja lisää pilkotut kasvikset.",
+      "Lisää vesi ja keitä, kunnes perunat ovat pehmeitä.",
+      "Lisää herneet ja mausta suolalla sekä mustapippurilla."
+    ]
+  },
+  {
+    "id": 15,
+    "name": "Kaalilaatikko jauhelihalla",
+    "ingredients": [
+      "kaali",
+      "jauheliha",
+      "riisi",
+      "sipuli",
+      "valkosipuli"
+    ],
+    "instructions": [
+      "Keitä riisi pakkauksen ohjeen mukaan.",
+      "Suikaloi kaali ja pilko sipuli sekä valkosipuli.",
+      "Ruskista jauheliha ja kuullota kasvikset pannulla.",
+      "Sekoita ainekset uunivuoassa ja mausta suolalla sekä mustapippurilla.",
+      "Paista 175 asteessa noin tunnin ajan, kunnes kaali on pehmeää."
+    ]
+  },
+  {
+    "id": 16,
+    "name": "Paprika-kanapasta",
+    "ingredients": [
+      "paprika",
+      "kana",
+      "valkosipuli",
+      "pasta",
+      "kerma",
+      "juusto"
+    ],
+    "instructions": [
+      "Keitä pasta pakkauksen ohjeen mukaan.",
+      "Pilko paprika ja valkosipuli sekä paista ne kanan kanssa kypsiksi.",
+      "Lisää kerma ja juustoraaste pannulle.",
+      "Mausta suolalla ja mustapippurilla, ja sekoita kastike pastan kanssa."
+    ]
+  },
+  {
+    "id": 17,
+    "name": "Tonnikalaleivät",
+    "ingredients": [
+      "leipä",
+      "tonnikala",
+      "kurkku",
+      "tomaatti",
+      "juusto"
+    ],
+    "instructions": [
+      "Aseta leipäviipaleille tonnikala ja viipaloitu kurkku sekä tomaatti.",
+      "Lisää päälle juustoa.",
+      "Paahda uunissa tai voileipägrillissä, kunnes juusto sulaa."
+    ]
+  },
+  {
+    "id": 18,
+    "name": "Kaurapuuro",
+    "ingredients": [
+      "kaurahiutale",
+      "maito",
+      "vesi"
+    ],
+    "instructions": [
+      "Mittaa kaurahiutaleet, maito ja vesi kattilaan.",
+      "Keitä miedolla lämmöllä välillä sekoittaen, kunnes puuro on sopivan paksua.",
+      "Mausta ripauksella suolaa."
+    ]
+  },
+  {
+    "id": 19,
+    "name": "Sitruunainen kanariisi",
+    "ingredients": [
+      "sitruuna",
+      "kana",
+      "riisi",
+      "valkosipuli",
+      "öljy"
+    ],
+    "instructions": [
+      "Keitä riisi pakkauksen ohjeen mukaan.",
+      "Paista kana kypsäksi öljyssä pilkotun valkosipulin kanssa.",
+      "Purista pannulle sitruunamehua ja mausta suolalla sekä mustapippurilla.",
+      "Tarjoa kana riisin kanssa."
+    ]
+  },
+  {
+    "id": 20,
+    "name": "Helpot letut",
+    "ingredients": [
+      "jauho",
+      "maito",
+      "kananmuna",
+      "voi"
+    ],
+    "instructions": [
+      "Vatkaa jauhot, maito ja kananmuna tasaiseksi taikinaksi.",
+      "Anna taikinan turvota hetki ja lisää ripaus suolaa.",
+      "Paista letut pannulla voissa molemmin puolin."
+    ]
+  },
+  {
+    "id": 21,
+    "name": "Nistipata",
+    "ingredients": [
+      "jauheliha",
+      "makaroni"
+    ],
+    "instructions": [
+      "Keitä makaroni pakkauksen ohjeen mukaan.",
+      "Ruskista jauheliha pannulla kypsäksi.",
+      "Sekoita jauheliha ja makaroni keskenään ja tarjoile."
+    ]
+  },
+  {
+    "id": 22,
+    "name": "Coop Lager",
+    "ingredients": [
+      "coop lager"
+    ],
+    "instructions": [
+      "Jäähdytä Coop Lager ja kaada lasiin."
     ]
   }
 ]

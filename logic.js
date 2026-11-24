@@ -13,6 +13,7 @@ const ingredientAliases = {
     "ruokakerma": "kerma",
     "kuohukerma": "kerma",
     "makaroni": "pasta",
+    "makarooni": "pasta",
     "kananmuna": "muna",
     "kananmunat": "muna",
     "perunat": "peruna",
@@ -67,6 +68,14 @@ function getUrgencyLevel(daysLeft) {
 /* 4. Tuotetietojen käsittely */
 
 function processProduct(product, today = new Date()) {
+    if (product.permanent) {
+        return {
+            ...product,
+            daysLeft: Number.POSITIVE_INFINITY,
+            urgency: "normal"
+        };
+    }
+
     const daysLeft = calculateDaysLeft(
         product.expiryDate,
         today
@@ -94,7 +103,7 @@ function sortProducts(products, today = new Date()) {
 function recommendRecipes(products, recipes, today = new Date()) {
 
     const availableIngredients = sortProducts(products, today)
-        .filter(product => product.daysLeft >= 0)
+        .filter(product => product.permanent || product.daysLeft >= 0)
         .map(product => ({
             name: normalizeIngredient(product.name),
             urgency: product.urgency
@@ -152,10 +161,13 @@ function recommendRecipes(products, recipes, today = new Date()) {
 
     return recommendations
         .filter(recipe => recipe.score > 0)
-        .sort((a, b) =>
-            b.score - a.score ||
-            b.matchPercentage - a.matchPercentage
-        );
+        .sort((a, b) => {
+            if (a.name === "Coop Lager" && b.name !== "Coop Lager") return -1;
+            if (b.name === "Coop Lager" && a.name !== "Coop Lager") return 1;
+
+            return b.score - a.score ||
+                b.matchPercentage - a.matchPercentage;
+        });
 }
 
 

@@ -16,6 +16,31 @@ function saveProducts() {
   localStorage.setItem('fridgeProducts', JSON.stringify(products));
 }
 
+const coopLager = products.find(
+  (product) => normalizeIngredient(product.name) === 'coop lager'
+);
+let productsChanged = false;
+
+if (coopLager) {
+  if (!coopLager.permanent || coopLager.expiryDate) {
+    coopLager.permanent = true;
+    delete coopLager.expiryDate;
+    productsChanged = true;
+  }
+} else {
+  products.push({
+    id: 'permanent-coop-lager',
+    name: 'Coop Lager',
+    amount: '1 kpl',
+    permanent: true
+  });
+  productsChanged = true;
+}
+
+if (productsChanged) {
+  saveProducts();
+}
+
 // Virheilmoituksen näyttäminen ja piilotus (V4)
 function showError(message) {
   errorMessage.textContent = message;
@@ -41,19 +66,24 @@ function renderFridge() {
       li.classList.add('warning-yellow');
     }
 
-    const expiryStatus = product.daysLeft < 0
-      ? 'vanhentunut'
-      : product.daysLeft === 0
-        ? 'viimeinen päivä tänään'
-        : `${product.daysLeft} pv jäljellä`;
+    const expiryStatus = product.permanent
+      ? 'Pysyvä ainesosa'
+      : product.daysLeft < 0
+        ? 'vanhentunut'
+        : product.daysLeft === 0
+          ? 'viimeinen päivä tänään'
+          : `${product.daysLeft} pv jäljellä`;
+    const expiryLabel = product.permanent
+      ? expiryStatus
+      : `Parasta ennen: ${product.expiryDate} (${expiryStatus})`;
 
     // Luodaan tekstisisältö
     li.innerHTML = `
       <div class="product-info">
         <strong>${product.name}</strong> (${product.amount || '1 kpl'})
-        <span class="days-left">Parasta ennen: ${product.expiryDate} (${expiryStatus})</span>
+        <span class="days-left">${expiryLabel}</span>
       </div>
-      <button class="btn-delete" data-id="${product.id}" title="Poista">✕</button>
+      ${product.permanent ? '' : `<button class="btn-delete" data-id="${product.id}" title="Poista">✕</button>`}
     `;
 
     fridgeList.appendChild(li);
@@ -108,6 +138,11 @@ form.addEventListener('submit', function(event) {
 fridgeList.addEventListener('click', function(event) {
   if (event.target.classList.contains('btn-delete')) {
     const idToDelete = event.target.getAttribute('data-id');
+    const productToDelete = products.find(product => product.id === idToDelete);
+
+    if (productToDelete && productToDelete.permanent) {
+      return;
+    }
     
     // Suodatetaan pois tuote, jolla on kyseinen id
     products = products.filter(product => product.id !== idToDelete);
