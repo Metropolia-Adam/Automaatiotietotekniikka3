@@ -57,6 +57,10 @@ body {
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
 }
 
+.rich-sidebar a + a {
+  margin-top: 24px;
+}
+
 .app-content {
   min-width: 0;
   width: 100%;
