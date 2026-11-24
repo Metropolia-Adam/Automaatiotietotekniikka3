@@ -7,55 +7,66 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <div class="page-layout">
+    <aside class="satire-sidebar">
+      <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&amp;list=RDdQw4w9WgXcQ&amp;start_radio=1" target="_blank" rel="noopener noreferrer">
+        <img
+          src="images/GTAScampic.jpeg"
+          alt="Satiirinen GTA 6:n ilmaista lataamista mainostava kuva">
+      </a>
+    </aside>
 
-  <header>
-    <h1>🧊 Hävikki No More</h1>
-    <p>Käytä pian vanhenevat ruoat ensin</p>
-  </header>
+    <div class="app-content">
+      <header>
+        <h1>🧊 Hävikki No More</h1>
+        <p>Käytä pian vanhenevat ruoat ensin</p>
+      </header>
 
-  <main>
-    <!-- V1 & V4: Tuotteen lisäyslomake ja virheilmoitus -->
-    <section class="card">
-      <h2>Lisää tuote</h2>
-      <form id="add-product-form">
-        <div class="input-group">
-          <label for="product-name">Tuotteen nimi</label>
-          <input type="text" id="product-name" placeholder="esim. kanafilee">
-        </div>
+      <main>
+        <!-- V1 & V4: Tuotteen lisäyslomake ja virheilmoitus -->
+        <section class="card">
+          <h2>Lisää tuote</h2>
+          <form id="add-product-form">
+            <div class="input-group">
+              <label for="product-name">Tuotteen nimi</label>
+              <input type="text" id="product-name" placeholder="esim. kanafilee">
+            </div>
 
-        <div class="row">
-          <div class="input-group">
-            <label for="product-amount">Määrä</label>
-            <input type="text" id="product-amount" placeholder="esim. 400g">
+            <div class="row">
+              <div class="input-group">
+                <label for="product-amount">Määrä</label>
+                <input type="text" id="product-amount" placeholder="esim. 400g">
+              </div>
+              <div class="input-group">
+                <label for="product-date">Parasta ennen</label>
+                <input type="date" id="product-date">
+              </div>
+            </div>
+
+            <!-- V4: Virheilmoituksen paikka (piilotettu oletuksena) -->
+            <p id="error-message" class="error hidden"></p>
+
+            <button type="submit" class="btn btn-primary">+ Lisää jääkaappiin</button>
+          </form>
+        </section>
+
+        <!-- V2: Jääkaapin sisältö (tyhjä, koska app.js täyttää tämän) -->
+        <section class="card">
+          <h2>Jääkaapin sisältö</h2>
+          <ul id="fridge-list" class="product-list">
+          </ul>
+        </section>
+
+        <!-- V3: Reseptiehdotukset -->
+        <section class="card">
+          <button id="suggest-recipes-btn" class="btn btn-accent">🍳 Ehdota reseptejä</button>
+
+          <div id="recipe-results" class="recipe-list">
           </div>
-          <div class="input-group">
-            <label for="product-date">Parasta ennen</label>
-            <input type="date" id="product-date">
-          </div>
-        </div>
-
-        <!-- V4: Virheilmoituksen paikka (piilotettu oletuksena) -->
-        <p id="error-message" class="error hidden"></p>
-
-        <button type="submit" class="btn btn-primary">+ Lisää jääkaappiin</button>
-      </form>
-    </section>
-
-    <!-- V2: Jääkaapin sisältö (tyhjä, koska app.js täyttää tämän) -->
-    <section class="card">
-      <h2>Jääkaapin sisältö</h2>
-      <ul id="fridge-list" class="product-list">
-      </ul>
-    </section>
-
-    <!-- V3: Reseptiehdotukset -->
-    <section class="card">
-      <button id="suggest-recipes-btn" class="btn btn-accent">🍳 Ehdota reseptejä</button>
-      
-      <div id="recipe-results" class="recipe-list">
-      </div>
-    </section>
-  </main>
+        </section>
+      </main>
+    </div>
+  </div>
 
   <script src="logic.js"></script>
   <script src="app.js"></script>

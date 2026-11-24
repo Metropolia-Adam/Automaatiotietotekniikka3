@@ -25,8 +25,53 @@ body {
   background-color: var(--bg-color);
   color: var(--text-main);
   padding: 16px;
-  max-width: 500px;
+  max-width: 1200px;
   margin: 0 auto;
+}
+
+.page-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 400px) minmax(0, 500px);
+  justify-content: center;
+  align-items: start;
+  gap: 24px;
+}
+
+.satire-sidebar {
+  position: sticky;
+  top: 16px;
+}
+
+.satire-sidebar a {
+  display: block;
+}
+
+.satire-sidebar img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.app-content {
+  min-width: 0;
+  width: 100%;
+}
+
+@media (max-width: 880px) {
+  .page-layout {
+    grid-template-columns: minmax(0, 500px);
+  }
+
+  .app-content {
+    grid-row: 1;
+  }
+
+  .satire-sidebar {
+    position: static;
+    grid-row: 2;
+  }
 }
 
 header {
