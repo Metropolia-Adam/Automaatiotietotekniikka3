@@ -15,7 +15,8 @@ Ratkaisu:
 https://github.com/Metropolia-Adam/Automaatiotietotekniikka3/commit/8d0218af87b5a39cacbed805ce14db8c1fec13c5
 Tietenkin valittiin ymmärrettävämpi teksti 
 
-
+Testaus ohjeet:
+[03 – Testaus ja validointi](./docs/03-testaus-ja-validointi.md)
 
 Työn tila:
 Valmis
