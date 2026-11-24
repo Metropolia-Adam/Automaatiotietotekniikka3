@@ -162,17 +162,11 @@ function recommendRecipes(products, recipes, today = new Date()) {
 /* 7. Reseptitiedoston lataaminen */
 
 async function loadRecipes() {
-    try {
-        const response = await fetch("./recipes.json");
+    const response = await fetch("./recipes.json");
 
-        if (!response.ok) {
-            throw new Error("Reseptitiedoston lataaminen epäonnistui");
-        }
-
-        return await response.json();
-
-    } catch (error) {
-        console.error("Reseptien latausvirhe:", error);
-        return [];
+    if (!response.ok) {
+        throw new Error(`Reseptitiedoston lataaminen epäonnistui (HTTP ${response.status})`);
     }
+
+    return await response.json();
 }
