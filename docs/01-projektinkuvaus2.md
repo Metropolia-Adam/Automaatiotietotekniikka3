@@ -25,3 +25,5 @@ V3 (Reseptisuositus): Sovellus vertaa käyttäjän lisäämiä tuotteita resepti
                       
 
 V4 (Virheilmoitus): Järjestelmä ei anna lisätä vanhentuneita ja tyhjiä tuotenimiä. Tämä näytetään käyttäjälle virheilmoituksena.
+
+Mainokset lisätty simuloimaan todellisen sovelluksen sponsoroitua toimintaa!
