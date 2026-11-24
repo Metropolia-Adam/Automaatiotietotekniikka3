@@ -31,22 +31,25 @@ body {
 
 .page-layout {
   display: grid;
-  grid-template-columns: minmax(0, 400px) minmax(0, 500px);
+  grid-template-columns: minmax(0, 400px) minmax(0, 500px) minmax(0, 400px);
   justify-content: center;
   align-items: start;
   gap: 24px;
 }
 
-.satire-sidebar {
+.satire-sidebar,
+.rich-sidebar {
   position: sticky;
   top: 16px;
 }
 
-.satire-sidebar a {
+.satire-sidebar a,
+.rich-sidebar a {
   display: block;
 }
 
-.satire-sidebar img {
+.satire-sidebar img,
+.rich-sidebar img {
   display: block;
   width: 100%;
   height: auto;
@@ -68,9 +71,17 @@ body {
     grid-row: 1;
   }
 
-  .satire-sidebar {
+  .satire-sidebar,
+  .rich-sidebar {
     position: static;
+  }
+
+  .satire-sidebar {
     grid-row: 2;
+  }
+
+  .rich-sidebar {
+    grid-row: 3;
   }
 }
 
