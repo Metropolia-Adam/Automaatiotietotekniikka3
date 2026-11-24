@@ -1,1 +1,5 @@
-Vaatimuksiin sidotut testit ja tulokset, validointi käyttäjätarpeeseen nähden sekä tunnetut puutteet
+Avaa linkki sovellukseen osoitteeseen:
+https://metropolia-adam.github.io/Automaatiotietotekniikka3/
+
+
+

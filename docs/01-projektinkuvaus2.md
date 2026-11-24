@@ -1,8 +1,11 @@
-**Tarve**: Köyhä ja osaamaton opiskelija ostaa elintarvikkeita ja unohtaa ne jääkaapin perälle / ei osaa tehdä ruokaa niistä
+
+**Tarve**: 
+Köyhä ja osaamaton opiskelija ostaa elintarvikkeita ja unohtaa ne jääkaapin perälle / ei osaa tehdä ruokaa niistä
 mikä aiheuttaa ruokahävikkiä kun ruuat vanhenevat ja mikä tärkeintä aiheuttaa rahan kuluttammista turhaan.
 Sovellus pitää kirjaa parasta ennen päiväyksistä ja ehdottaa valmiita reseptejä aineksista jotka ovat vanhenemassa.
 
-**Käyttäjäskenaario** : Opiskelija avaa sovelluksen kaupassa ja hän näkee punaisella korostettuuna, että kanafileet ja
+**Käyttäjäskenaario**: 
+Opiskelija avaa sovelluksen kaupassa ja hän näkee punaisella korostettuuna, että kanafileet ja
 kermapurkki ovat vanhenemassa huomenna. Opiskelija painaa "Ehdota reseptejä" nappia, jolloin sovellus ottaa tietokannasta
 "kermainen kanapasta" reseptin ja kertoo että häneltä puuttuu vain suola ja pasta.
 
